@@ -15,12 +15,235 @@
     </style>
 </head>
 <body>
+    <div class="wrapper">
+    <header class="header">
+      <div class="header-top">
+      <div class="header-left">
+          <div class="images">
+              <img src="./svg/plus.svg" alt="Плюс">
+              <img src="./svg/klinika.svg" alt="Клиника">
+          </div>
+          <div class="pics">
+              <img src="./svg/wk.svg" alt="ВКонтакте">
+              <img src="./svg/facebook.svg" alt="Facebook">
+              <img src="./svg/whatsapp.svg" alt="WhatsApp">
+              <img src="./svg/tg.svg" alt="Telegram">
+          </div>
+      </div>
+      <div class="header-right">
+          <div class="header-right-in">
+              <h1>8 (800) 123-45-67</h1>
+              <p>г. Богучар, ул. Мжд Киевское 17-й км</p>
+          </div>
+          <img src="./svg/search.svg" alt="Поиск">
+          <button>Срочный вызов врача</button>
+      </div>
+  </div>
+  <div class="header-bottom">
+      <ul>
+          <li class="menu-item">
+              <span onclick="toggleMenu('narcomania')">Наркомания -</span>
+              <div id="narcomania" class="submenu">
+                  <p>Пункт меню 1</p>
+                  <p>Пункт меню 2</p>
+                  <p>Пункт меню N</p>
+              </div>
+          </li>
+          <li class="menu-item">
+              <span onclick="toggleMenu('alcoholism')">Алкоголизм +</span>
+              <div id="alcoholism" class="submenu">
+                  <p>Пункт меню 1</p>
+                  <p>Пункт меню 2</p>
+                  <p>Пункт меню N</p>
+              </div>
+          </li>
+          <li class="menu-item">
+              <span onclick="toggleMenu('rehabilitation')">Реабилитация +</span>
+              <div id="rehabilitation" class="submenu">
+                  <p>Пункт меню 1</p>
+                  <p>Пункт меню 2</p>
+                  <p>Пункт меню N</p>
+              </div>
+          </li>
+          <li class="menu-item">
+              <span onclick="toggleMenu('coding')">Кодирование +</span>
+              <div id="coding" class="submenu">
+                  <p>Пункт меню 1</p>
+                  <p>Пункт меню 2</p>
+                  <p>Пункт меню N</p>
+              </div>
+          </li>
+          <li>Цены</li>
+          <li>О клинике+</li>
+          <li>Контакты</li>
+      </ul>
+  </div>
+</header>
+      <section class="main">
+        <div class="main-left">
+        <h1>Частная наркологическая клиника в Твери</h1>
+        <ul>
+            <li>Частная наркологическая клиника в Твери</li>
+            <li>В стационаре и на дому</li>
+            <li>Приезд врача в течение 40 минут</li>
+            <li>Реабилитация с пожизненной гарантией от срыва</li>
+        </ul>
+        <div class="btns">
+            <button id="openModalBtn" class="btn1">Оставить заявку</button>
+            <button class="btn2">Написать на WhatsApp</button>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-btn">Закрыть</button> <!-- Кнопка для закрытия -->
+            <h2>Оставить заявку</h2>
+            <form id="applicationForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="main-mid">
+        <img src="./svg/dots.svg" alt="Точки">
+        <div class="main-mid-in">
+            <img src="./svg/rec.svg" alt="Рек">
+            <img src="./svg/sc.svg" alt="Сц">
+        </div>
+    </div>
+    <div class="main-right">
+        <img src="./img/image.png" alt="Изображение">
+    </div>
 
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+
+    </section>
+      <section class="section1">
+        <div class="section1-left">
+            <h1>Популярные услуги</h1>
+            <img src="/img/image2.png" alt="">
+        </div>
+        <div class="section1-right">
+            <div class="right-top">
+                <img src="./svg/arrow.svg" alt="">
+                <h1>Нужна быстрая помощь</h1>
+            </div>
+            <!-- - -->
+             <div class="right-main">
+                <div class="right-main-in">
+                <p>Наркомания</p>
+                <div class="part1">
+                    <h4>УБОД</h4>
+                    <h3>от 30 000 ₽</h3>
+                </div>
+                <!-- one -->
+                 <div class="part2">
+                    <h4>Снятие ломки</h4>
+                    <h3>от 6 500 ₽</h3>
+                 </div>
+                 <!-- - two-->
+                  <div class="part3">
+                    <h4>Наркологическая помощь </h4>
+                    <h3>от 6 500 ₽ </h3>
+                  </div>
+                  <!-- --three -->
+                   <div class="part4">
+                    <h4>Детоксикация от наркотиков</h4>
+                    <h3>от 6 000 ₽</h3>
+                   </div>
+                </div>
+                <!-- --- -->
+             <div class="right-main-in2">
+                <p>Детоксикация от наркотиков</p>
+                <div class="part5">
+                    <h4>Вывод из запоя</h4>
+                    <h3>от 3500 ₽</h3>
+                </div>
+                <div class="part6">
+                    <h4>Капельница от похмелья</h4>
+                    <h3>от 3500 ₽</h3>
+                </div>
+                <div class="part7">
+                    <h4>Нарколог на дом</h4>
+                    <h3>от 3500 ₽</h3>
+                </div>
+                <div class="part8">
+                    <h4>Консультация нарколога</h4>
+                    <h3>от 2000 ₽</h3>
+                </div>
+             </div>
+        </div>
+        <div class="right-top2">
+            <img src="./svg/heart.svg" alt="">
+            <h1>Нужно комплексное лечение</h1>
+        </div>
+    <div class="right-main2">
+        <div class="right-main-in11">
+        <p>Наркомания</p>
+        <div class="part11">
+            <h4>Реабилитация наркомании</h4>
+            <h3>от 40000 ₽</h3>
+        </div>
+        <div class="part22">
+            <h4>Кодирование Налтрексоном</h4>
+            <h3>от 12000 ₽</h3>
+        </div>
+        <div class="part33">
+            <h4>Лечение от Соли</h4>
+            <h3>от 12000 ₽</h3>
+        </div>
+        <div class="part44">
+            <h4>Лечение от Лирики</h4>
+            <h3>от 12000 ₽</h3>
+        </div>
+    </div>
+    <div class="right-main-in22">
+        <p>Детоксикация от наркотиков</p>
+        <div class="part55">
+            <h4>Лечение алкоголизма</h4>
+            <h3>от 3800 ₽</h3>
+        </div>
+        <div class="part66">
+            <h4>Реабилитация алкоголизма</h4>
+            <h3>от 1 130 ₽/сутки</h3>
+        </div>
+        <div class="part77">
+            <h4>Кодирование от алкоголизма</h4>
+            <h3>от 6000 ₽</h3>
+        </div>
+        <div class="part88">
+            <h4>Стационарное</h4>
+            <h3>от 3800 ₽</h3>
+        </div>
+    </div>
+</div>
+</div>
+    </section>
+    <section class="section2">
+    </section>
+    <section>
+      <section class="section3">
+        <h1>Наркологическая клиника в Москве: опытные врачи, хорошие условия и гарантия анонимности</h1>
+        <div class="section3-in">
+            <p>Алкогольная и наркотическая зависимость – одна из основных возможных причин смерти во всех странах. Чтобы освободиться от проблемы, больной должен получить профессиональную помощь. Наркологическая клиника «Запоям – нет» в Москве работает с пациентами, независимо от степени тяжести их состояния, и разрабатывает индивидуальное эффективное лечение, которое гарантированно избавит от аддиктивного состояния.</p>
+            <h2>Выбор клиники</h2>
+            <p>Зависимость – это психическое заболевание, при котором у человека происходит расстройство воли, мешающее справиться с компульсивной тягой к этанолу. Справиться с ним самостоятельно, не обращаясь к наркологу, можно только на первой стадии алкоголизма. Но при развитии абстиненции, когда психологическая тяга осложняется физической, требуется обратиться в центр помощи зависимым.
+                Квалифицированные врачи принимают пациентов в крупных и маленьких городах в государственных и платных наркологических клиниках. Если учреждение имеет лицензию, оно обязано опираться при лечебном процессе на клинические рекомендации Минздрава, в которые входит описание всех доказавших действенность и безопасность методов.</p>
+                <h3>Но в коммерческих центрах терапия проходит:</h3>
+                <ul>
+                    <li>Анонимно</li>
+                    <li>C обеспечением высокого уровня комфорта</li>
+                    <li>C применением современных методик и хороших препаратов</li>
+                </ul>
+                <p>Кроме приемного отделения и стационара, в частных наркологических клиниках есть реабилитационный центр и служба выезда специалистов на дом. Помощь оказывается круглосуточно, при этом пациент может связаться с медиком в любое время суток для получения дополнительной информации о лечении.</p>
+        </div>
+</div>
     <section></section>
     <section></section>
     <section></section>
