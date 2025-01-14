@@ -1,3 +1,68 @@
+
+const block7 = [
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+    {
+        img:'./img/shutterstock_1637496319 2.png'
+
+    },
+]
+
+
+const container = document.getElementById('block7');
+
+block7.map((item, index) => {
+    const productElement = `
+        <div class="">
+        <img src="${item.img}" class="w-[300px]" >
+        </div>
+      
+    `;
+    container.innerHTML += productElement;
+});
+
 const carousel = document.getElementById('carousel');
 const nextBtn = document.getElementById('prevBtn');
 const prevBtn = document.getElementById('nextBtn');
@@ -42,3 +107,4 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
 }
+
